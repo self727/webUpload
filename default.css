@@ -1,0 +1,130 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+/*按钮*/
+#picker {
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    border: 1px solid #cacaca;
+}
+#picker .webuploader-pick {
+    background: #eee!important;
+    width: 100%!important;
+    height: 100%!important;
+    line-height: 98px;
+    font-size: 18px;
+    color: #999;
+    padding: 0;
+}
+.webuploader-element-invisible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px,1px,1px,1px);
+}
+.webuploader-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.webuploader-pick {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: #3bb4f2;
+    padding: 4px 12px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+}
+/*上传列表*/
+.item{
+    width: 300px;
+    height: 70px;
+    background: #F1F1F1;
+    border: 1px solid #c3c3c3;
+    padding: 5px 10px;
+    position: relative;
+    font-size: 14px;
+    color: #545454;
+    margin-bottom: 15px;
+    box-sizing: content-box;
+}
+.item h4{
+    margin: 0 0 6px;
+    font-size: 16px;
+    width: 180px;
+    height: 22px;
+    line-height: 22px;
+    white-space:nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.item .progress{
+    height: 5px;
+    width: 100%;
+    margin: 0;
+    background: #aaa;
+}
+.item .progress-bar{
+    height: 100%;
+    background: #676565;
+    width: 0;
+}
+.item .start_upload{
+
+}
+.item .progress-txt{
+    margin-top:10px;
+    width: 200px;
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+    white-space:nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.item .del_upload{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+.item .del_upload:hover{
+    color: #333;
+    font-weight: 600;
+}
+.item .stop_upload,.start_upload,.again_upload,.continue_upload{
+    width: 83px;
+    margin-top: 10px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background: #d8d8d8;
+    border-radius: 3px;
+    display: none;
+    cursor: pointer;
+}
+.item .stop_upload:hover,.start_upload:hover,.again_upload:hover,.continue_upload:hover{
+    background: #cacaca;
+}
+.item .current{
+    display: block;
+}
